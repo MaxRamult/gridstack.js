@@ -971,7 +971,7 @@
         }
 
         if (maxHeight > this._styles._max) {
-            for (var i = this._styles._max; i < maxHeight; ++i) {
+            for (var i = this._styles._max; i <= maxHeight; ++i) {
                 Utils.insertCSSRule(this._styles,
                     prefix + '[data-gs-height="' + (i + 1) + '"]',
                     'height: ' + getHeight(i + 1, i) + ';',
